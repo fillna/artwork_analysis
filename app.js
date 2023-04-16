@@ -1,9 +1,9 @@
 function final(){
-    var filePath1 = "dimension.csv";
-    var filePath2 = "constituent.csv";
-    var filePath3 = "object.csv";
-    var filePath4 = "country.csv";
-    var filePath5 = "assocaitions.csv";
+    var filePath1 = "/data/dimension.csv";
+    var filePath2 = "/data/constituent.csv";
+    var filePath3 = "/data/object.csv";
+    var filePath4 = "/data/country.csv";
+    var filePath5 = "/data/assocaitions.csv";
 
     scatter_dimension(filePath1);
     bar_constitunent(filePath2);
