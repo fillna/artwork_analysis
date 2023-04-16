@@ -1,0 +1,209 @@
+
+<html>  
+<head>  
+<script type="text/javascript" src="app.js">
+    </script>  
+<link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+</head>
+<body onload=final()> 
+
+
+<div>
+<h2 class="section">Artwork Analysis</h2>
+<p class="content">
+    Art museums are an integral part of cultural institutions that play a crucial role in preserving and showcasing art to the public. 
+    They provide a platform for artists to display their work and allow individuals to appreciate and learn about different styles, movements, and cultures. 
+    Art museums offer a range of educational programs, lectures, and workshops that aim to enhance visitors' understanding and appreciation of art. 
+    Additionally, they serve as a community hub, hosting cultural events and exhibitions that bring people together and promote dialogue and exchange of ideas. 
+    Through their collections, exhibitions, and educational programs, art museums promote cultural awareness and enrich our understanding of the world around us.
+</p>    
+<p class="content">
+    This project will explore the distribution of art collections across various categories, countries, and years of creation.
+
+</p>
+
+<br>
+
+<div>
+<h3 class="section">Art Collection: Physical size</h3>
+
+<p class="content">
+    The physical dimension of an art collection refers to the tangible aspects of the artwork, such as its size, material, texture, and color. 
+    These elements can greatly influence the meaning and interpretation of the artwork. 
+    For instance, the size of an artwork can evoke different emotions and convey varying messages. 
+    A large sculpture may represent strength, power, or dominance, while a small sculpture may symbolize intimacy, vulnerability, or delicacy. 
+    Therefore, the physical dimensions of an art collection can significantly impact the meaning and interpretation of the artwork, allowing individuals to appreciate the complexities and depth of the art collection.
+</p>    
+<p class="content">
+    In this section, we will examine the physical dimensions of various artworks and utilize a graph to analyze their distribution. 
+    The graph displays a general pattern of distribution while also highlighting outliers that may have a unique physical characteristic. 
+</p>    
+<p class="content">
+    For instance, if someone is interesting in finding out "what is the biggest print artwork in term of its physical size", 
+    they can easily recognize that "The Poacher" is the largest in height while "The Blacksmith's Shop" is the largest in width within all Print collections.
+</p>  
+<p class="content">
+    Such insights into the physical aspects of the artworks allows people to gain a deeper understanding of their composition, form, and meaning. 
+    By analyzing the distribution of physical dimensions, we can identify trends and patterns that may be indicative of specific cultural or historical contexts, as well as the individual styles and techniques of the artists. 
+    This information can be used to enrich our appreciation and understanding of art, as well as provide valuable insights for future research and analysis.
+</p>
+
+<p class="content">
+    Color Scheme: Purple. Purple is a color that contrast well with many other colors and connates with creativity and luxury.
+    <br><br>
+    Marks: Points.
+    <br><br>
+    Channels: Both Horizontal and Vertical Position.
+</p>
+
+<div id="plot1">
+    
+    </div>
+    <select id="selectButton"></select>
+    <div id="scatter" class="center_plot">
+    </div><br>
+</div>    
+</div>
+    
+
+<div>
+<h3 class="section">Art Collection: Quantity</h3>
+
+<p class="content">
+    Knowing how much artwork is created by individuals, couples, corporations, or anonymously in a given year can provide valuable insights into the state of the art world. 
+    For one, it can give us a sense of the level of artistic activity happening in a given area or region. This can be helpful for artists looking to connect with others, find collaborators, or gauge their own output in relation to their peers. 
+</p>
+<p class="content">
+    In this section, we will use bar chart, stack bar chart, and choropleth to visualize creation quantity with respect to artist constitunent type, year made, and geographical location.
+</p>
+<p class="content">
+    The motivation question behind bar chart is: "What is the quantity of artwork produced individually in each category?"
+</p>
+<p class="content">
+    According to the graph, the majority of artwork is produced by solo artists while very few pieces are created by couples. 
+    Among the artworks created by individual artists, the majority are art prints, with approximately 60,000 collections currently preserved in museums. 
+    In terms of artworks created by anonymous artists, there is a relatively even distribution across categories.
+</p>
+<p class="content">
+    Color Scheme: Maroon. Maroon has high contrast when pair with lighter colors (i.e. background color) and evokes emotions like passion and determination.
+    <br><br>
+    Marks: Line.
+    <br><br>
+    Channels: Both Horizontal and Vertical Position.
+</p>
+
+<div id="plot2">
+
+    </div>
+    <div id="con_button" class="center_plot">
+        Artist Type:
+        <input type="radio" name="constitunent" value="individual" checked="checked">
+        <label>Individual</label>
+        <input type="radio" name="constitunent" value="anonymous">
+        <label>Anonymous</label>
+        <input type="radio" name="constitunent" value="corporate">
+        <label>Corporate</label>
+        <input type="radio" name="constitunent" value="couple">
+        <label>Couple</label>
+    </div>
+
+    <div id="bar" class="center_plot">
+    </div>
+</div> 
+
+
+<div>
+<p class="content">
+    In addition to quantity distribution across different creation type, tracking the number and type of artworks created in a year can provide insight into larger trends in the art world, such as shifts in style, subject matter, or medium. 
+    This information can be helpful for collectors, curators, and art enthusiasts who want to stay up-to-date with the latest developments in the field. 
+</p>
+<p class="content">
+    The motivation question behind stack bar chart is: "Which country produces the most artwork in terms of paintings, sculpture, drawings, and photographs from 1950-1980?"
+</p>
+<p class="content">
+    The period between 1950 and 1980 in art history is often referred to as the post-war period or the contemporary period. 
+    It was a time of significant artistic experimentation and innovation, as artists broke away from traditional styles and techniques and explored new forms of expression.
+    One of the main characteristics of art during this period was the emergence of various art movements, such as Abstract Expressionism, Pop Art, Minimalism, and Conceptual Art. 
+</p>
+<p class="content">
+    Color Scheme: [Maroon, Green, Cornflowerblue, Gold]. Great contrast with each other.
+    <br><br>
+    Marks: Line.
+    <br><br>
+    Channels: Both Horizontal and Vertical Position, Color.
+</p>
+ 
+<div id="plot3">
+
+    </div>
+    <div id="stack_bar" class="center_plot">
+    </div>
+</div>  
+
+<div>
+<p class="content">
+    Knowing where the artworks were created can help us appreciate the unique characteristics of different artistic traditions and styles. 
+    By studying the geography and cultural context of the artwork's origin, we can gain a better appreciation of the local influences that shaped the artist's vision and style. 
+    Finally, knowledge of the artwork's origin can also provide important clues about its authenticity, provenance, and condition, all of which are crucial factors in determining its historical and artistic significance.
+</p>
+
+<p class="content">
+    The motivation question behind stack bar chart is: "Which country holds the majority of the artworks present in this exhibition?"
+</p>
+
+<p class="content">
+    Most of the collections preserved in National Gallery of Art are created within the U.S. 
+    Since the museum is located in U.S, its surrounded neighborhood can create a higher demand for American artwork among museums and collectors, which in turn can influence the types of artwork that are collected and displayed.
+    Additionally, the museum also includes a considerable amount of European artworks, and also 2 Chinese artworks.
+</p>
+<p class="content">
+    Color Scheme: Sequential Red; schemeOrRd.
+    <br><br>
+    Marks: Area.
+    <br><br>
+    Channels: Both Horizontal and Vertical Position, Color.
+</p>
+    
+<div id="plot_4">
+
+    </div>
+    <div id="choropleth" class="center_plot">
+    </div>
+</div>
+   
+<div>
+<h3 class="section">Art Collection: Association</h3>
+<p class="content">
+    Understanding an artwork's artistic lineage can help us appreciate its context and significance and can deepen our understanding of its style and technique. 
+    For example, the influence of Italian Renaissance painting on later European art is widely recognized and can be seen in many works throughout history. 
+    Understanding these artistic connections can help us appreciate the continuity and evolution of artistic traditions and the creative process that underpins them.
+</p>
+
+<p class="content">
+    The motivation question behind this network graph is: "Which artwork is most closely related to other pieces, and what are those connections?"
+    Base on the adjacent matrix, one can easily identify "Saint Peter" is the most influential painting artwork in terms of separable association.
+</p>
+
+<p class="content">
+    Color Scheme: schemeCategory10.
+    <br><br>
+    Marks: Point.
+    <br><br>
+    Channels: Both Horizontal and Vertical Position, Color.
+</p>
+
+<div id="plot_5">
+
+    </div>
+    <div id="network_graph" class="center_plot">
+    </div>
+</div>
+
+    
+   
+</body>  
+</html>  

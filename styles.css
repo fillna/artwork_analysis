@@ -1,0 +1,54 @@
+.center_plot {
+    margin: auto;
+    text-align: center;
+}
+
+.section {
+    text-align: center;
+}
+
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.tooltip{
+    background-color: snow;
+    border: solid;
+    border-width : 2px;
+    border-radius: 20px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    position: absolute;
+}
+
+#selectButton{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: snow;
+    text-align: center;
+    border-radius: 10px;
+    height: 25px;
+}
+
+#legend {
+    font-size: 0.7em;
+    letter-spacing: 0.1;
+  }
+
+.choro_tooltip {   
+  padding: 7px;
+  font-size: 0.8em;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+} 
+
